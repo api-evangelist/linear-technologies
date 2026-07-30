@@ -1,23 +1,84 @@
 aid: linear-technologies
-name: Linear Technologies
-description: Linear Technologies is a company surfaced as a portfolio company of mayfield and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: Linear Technology Corporation
+description: 'Linear Technology Corporation (listed as "Linear Technologies" in the Mayfield
+  portfolio harvest) was an American analog semiconductor company founded in 1981 and
+  headquartered in Milpitas, California, designing and manufacturing high-performance
+  analog integrated circuits — power management, data converters, amplifiers, voltage
+  references, interface and RF products — for industrial, automotive, communications,
+  computing, and military/aerospace markets. Backed early by Mayfield and Kleiner Perkins,
+  it went public on NASDAQ in 1986 under the ticker LLTC and was acquired by Analog Devices
+  in March 2017. The company no longer operates independently: its linear.com domain
+  301-redirects to www.analog.com, and its product lines, datasheets, and design tools
+  (including LTspice) are now distributed through Analog Devices. As an analog component
+  manufacturer it never operated a web/developer API program, and no public API surface
+  exists to enrich. This profile is retained as an acquired-company lead; the successor
+  developer surface is catalogued in the API Evangelist network under analog-devices.'
 url: https://raw.githubusercontent.com/api-evangelist/linear-technologies/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/linear-technologies.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - mayfield
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: analog-devices
+x-successor: Analog Devices
+x-duplicate-of: linear-technology
+x-no-api-surface: true
+x-evidence:
+- probe: https://www.linear.com/
+  result: 301 -> https://www.analog.com/en/landing-pages/001/adi-linear-combine/index.html?source=ltc
+  note: every path on linear.com, including /.well-known/*, redirects to the Analog Devices
+    "ADI + Linear combine" landing page; the source=ltc query parameter is Linear Technology
+    Corporation's NASDAQ ticker
+- probe: whois linear.com
+  result: registrar CSC Corporate Domains, name servers DNS1/DNS2.CSCDNS.NET — the same
+    corporate registrar as analog.com
+- probe: /.well-known/security.txt, /.well-known/api-catalog on www.linear.com
+  result: 301 (no documents served); no well-known discovery surface of its own
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Semiconductor
+- Analog
+- Integrated Circuits
+- Power Management
+- Electronic Components
+- Hardtech
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/linear-technologies-domain-security.yml
+- type: Website
+  url: https://www.linear.com
+- type: Successor
+  name: Analog Devices
+  url: https://www.analog.com
+- type: Product
+  name: ADI + Linear Technology (combined company landing page)
+  url: https://www.analog.com/en/landing-pages/001/adi-linear-combine/index.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
