@@ -48,7 +48,7 @@ x-evidence:
     corporate registrar as analog.com
 - probe: /.well-known/security.txt, /.well-known/api-catalog on www.linear.com
   result: 301 (no documents served); no well-known discovery surface of its own
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
