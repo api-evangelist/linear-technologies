@@ -14,6 +14,9 @@ description: 'Linear Technology Corporation (listed as "Linear Technologies" in 
   exists to enrich. This profile is retained as an acquired-company lead; the successor
   developer surface is catalogued in the API Evangelist network under analog-devices.'
 url: https://raw.githubusercontent.com/api-evangelist/linear-technologies/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "As an analog component manufacturer it never operated a web/developer API program, and no public API surface exists to enrich."
 deliveryModel:
   model: unknown
   open_source: false
