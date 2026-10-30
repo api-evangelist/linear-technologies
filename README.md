@@ -64,30 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Linear Technology Corporation (listed as "Linear Technologies" in the Mayfield portfolio harvest) was an
-American analog semiconductor company founded in 1981 and headquartered in Milpitas, California. It
-designed and manufactured high-performance analog integrated circuits — power management, data
-converters, amplifiers, voltage references, interface and RF products — for industrial, automotive,
-communications, computing, and military/aerospace markets.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-Backed early by Mayfield and Kleiner Perkins, it went public on NASDAQ in 1986 under the ticker LLTC and
-was **acquired by Analog Devices in March 2017**.
+Linear Technology Corporation (listed as "Linear Technologies" in the Mayfield portfolio harvest) was an American analog semiconductor company founded in 1981 and headquartered in Milpitas, California, designing and manufacturing high-performance analog integrated circuits — power management, data converters, amplifiers, voltage references, interface and RF products — for industrial, automotive, communications, computing, and military/aerospace markets. Backed early by Mayfield and Kleiner Perkins, it went public on NASDAQ in 1986 under the ticker LLTC and was acquired by Analog Devices in March 2017. The company no longer operates independently: its linear.com domain 301-redirects to www.analog.com, and its product lines, datasheets, and design tools (including LTspice) are now distributed through Analog Devices. As an analog component manufacturer it never operated a web/developer API program, and no public API surface exists to enrich. This profile is retained as an acquired-company lead; the successor developer surface is catalogued in the API Evangelist network under analog-devices.
 
-## Status: acquired — no API surface
+**Areas:** Company · Semiconductors · Analog · Integrated Circuits · Power Management · Electronic Components · Hardtech · Acquired
 
-The company no longer operates independently. Verified by live probe (2026-07-19):
+## Linear Technology Corporation on APIs.io (historical record)
 
-- `https://www.linear.com/` `301` → `https://www.analog.com/en/landing-pages/001/adi-linear-combine/index.html?source=ltc`
-- Every path, including `/.well-known/*`, redirects to the same Analog Devices landing page
-- `linear.com` and `analog.com` share the registrar CSC Corporate Domains and CSCDNS name servers
-- No developer portal, documentation, OpenAPI, SDK, or public API surface exists
+Everything profiled for Linear Technology Corporation is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/linear-technologies/](https://apis.io/providers/linear-technologies/)** — or go straight to one of the APIs or properties below.
 
-As an analog component manufacturer it never operated a web/developer API program, so there is nothing to
-enrich beyond identity. The successor developer surface is catalogued in the API Evangelist network under
-[`analog-devices`](../analog-devices/).
+### Published properties
 
-**Duplicate note:** `all/linear-technology/` is the same company harvested from the Kleiner Perkins
-portfolio. These two stubs should be merged in a later dedupe pass. Both are distinct from `all/linear/`
-and `all/linear-app/` (Linear, the issue-tracking product at linear.app).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Backed by: mayfield, kleiner-perkins
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Linear Technologies Domain Security](https://apis.io/security/linear-technologies/linear-technologies-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.linear.com)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Linear Technology Corporation: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/linear-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
